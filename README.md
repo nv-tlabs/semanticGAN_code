@@ -1,11 +1,15 @@
 # SemanticGAN
-Official Repository for
+This is the official code for:
 
-Semantic Segmentation with Generative Models: Semi-Supervised Learning and Strong Out-of-Domain Generalization (**CVPR'21**)
+#### Semantic Segmentation with Generative Models: Semi-Supervised Learning and Strong Out-of-Domain Generalization
+
+[Daiqing Li](https://scholar.google.ca/citations?user=8q2ISMIAAAAJ&hl=en), [Junlin Yang](https://scholar.google.com/citations?user=QYkscc4AAAAJ&hl=en), [Karsten Kreis](https://scholar.google.de/citations?user=rFd-DiAAAAAJ&hl=de), [Antonio Torralba](https://groups.csail.mit.edu/vision/torralbalab/), [Sanja Fidler](http://www.cs.toronto.edu/~fidler/)
+
+CVPR 2021
+**[[Paper](https://arxiv.org/abs/2104.05833)]  [[Supp](https://nv-tlabs.github.io/semanticGAN/resources/SemanticGAN_supp.pdf)]**
 
 <img src = "./figs/method.png" width="100%"/>
 
-[paper](https://arxiv.org/abs/2104.05833)  [supplementary](https://nv-tlabs.github.io/semanticGAN/resources/SemanticGAN_supp.pdfg)
 
 In this paper, we utilize the GAN as the inference network via test-time optimization. datasetGAN is faster at test time and can handle less training data, while semGAN shows very strong performance on out-of-distribution data.
 
@@ -22,12 +26,9 @@ pip install -r requirements.txt
 
 To reproduce paper **Semantic Segmentation with Generative Models: Semi-Supervised Learning and Strong Out-of-Domain Generalization**: 
 
-*Download Pretrained checkpoint from [google drive](https://drive.google.com/drive/folders/1cgzik55OyVwlHIjj2f2HtMngGKORBlCn?usp=sharing)*
-
 1. Run **Step1: Semantic GAN training**
 2. Run **Step2: encoder training**
 3. Run **Inference & Optimization**.  
-
 
 
 ---
@@ -44,8 +45,6 @@ python train_seg_gan.py \
 --seg_name celeba-mask \
 --checkpoint_dir [path-to-ckpt-dir] \
 ```
-
-Pretrain checkpoints at [google drive](https://drive.google.com/drive/folders/1cgzik55OyVwlHIjj2f2HtMngGKORBlCn?usp=sharing)
 
 To use multi-gpus training in the cloud,
 
@@ -118,13 +117,6 @@ python inference.py \
 Please cite the follow paper is you used the code in this repository.
 
 ```
-@inproceedings{zhang21,
-  title={DatasetGAN: Efficient Labeled Data Factory with Minimal Human Effort},
-  author={Zhang, Yuxuan and Ling, Huan and Gao, Jun and Yin, Kangxue and Lafleche, Jean-Francois and Barriuso, Adela and Torralba, Antonio and Fidler, Sanja},
-  booktitle={CVPR},
-  year={2021}
-}
-
 @inproceedings{semanticGAN, 
 title={Semantic Segmentation with Generative Models: Semi-Supervised Learning and Strong Out-of-Domain Generalization}, 
 booktitle={Conference on Computer Vision and Pattern Recognition (CVPR)}, 
