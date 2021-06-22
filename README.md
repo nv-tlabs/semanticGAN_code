@@ -5,9 +5,7 @@ This is the official code for:
 
 [Daiqing Li](https://scholar.google.ca/citations?user=8q2ISMIAAAAJ&hl=en), [Junlin Yang](https://scholar.google.com/citations?user=QYkscc4AAAAJ&hl=en), [Karsten Kreis](https://scholar.google.de/citations?user=rFd-DiAAAAAJ&hl=de), [Antonio Torralba](https://groups.csail.mit.edu/vision/torralbalab/), [Sanja Fidler](http://www.cs.toronto.edu/~fidler/)
 
-CVPR 2021
-
-**[[Paper](https://arxiv.org/abs/2104.05833)]  [[Supp](https://nv-tlabs.github.io/semanticGAN/resources/SemanticGAN_supp.pdf)]**
+CVPR 2021 **[[Paper](https://arxiv.org/abs/2104.05833)]  [[Supp](https://nv-tlabs.github.io/semanticGAN/resources/SemanticGAN_supp.pdf)]**
 
 <img src = "./figs/method.png" width="100%"/>
 
@@ -27,7 +25,7 @@ pip install -r requirements.txt
 To reproduce paper **Semantic Segmentation with Generative Models: Semi-Supervised Learning and Strong Out-of-Domain Generalization**: 
 
 1. Run **Step1: Semantic GAN training**
-2. Run **Step2: encoder training**
+2. Run **Step2: Encoder training**
 3. Run **Inference & Optimization**.  
 
 
@@ -119,7 +117,7 @@ Please cite the following paper if you used the code in this repository.
 @inproceedings{semanticGAN, 
 title={Semantic Segmentation with Generative Models: Semi-Supervised Learning and Strong Out-of-Domain Generalization}, 
 booktitle={Conference on Computer Vision and Pattern Recognition (CVPR)}, 
-author={Li, Daiqing and Yang, Junlin and Karsten, Kreis and Antonio, Torralba and Fidler, Sanja}, 
+author={Li, Daiqing and Yang, Junlin and Kreis, Karsten and Torralba, Antonio and Fidler, Sanja}, 
 year={2021}, 
 }
 ```
@@ -127,7 +125,11 @@ year={2021},
 
 
 ## License 
+For any code dependency related to Stylegan2, the license is under the Nvidia Source Code License-NC. To view a copy of this license, visit https://nvlabs.github.io/stylegan2/license.html
 
+The work SemanticGAN is made under MIT License.
+
+```
 The MIT License (MIT)
 
 Copyright (c) 2021 NVIDIA Corporation. 
@@ -148,3 +150,4 @@ FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
 COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
 IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
 CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```
