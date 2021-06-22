@@ -70,7 +70,7 @@ python train_enc.py \
 
 ## Inference
 
-1. For Face Parts Segmentation Task
+For Face Parts Segmentation Task
 
 ![img](./figs/face-parts-seg.png?lastModify=1616189357)
 
@@ -89,23 +89,6 @@ python inference.py \
 Visualization of different optimization steps
 
 ![img](./figs/face-parts-opt-steps.png)
-
-2. For Chest X-ray Segmentation Task,
-
-![img](./figs/cxr-seg.png?lastModify=1616189357)
-
-
-```
-python inference.py \
---ckpt [path-to-ckpt] \
---img_dir [path-to-test-folder] \
---outdir [path-to-output-folder] \
---dataset_name cxr \
---w_plus \
---image_mode L \
---seg_dim 1 \
---step 200 [optimization steps] \
-```
 
 
 ## Citation 
