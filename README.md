@@ -9,7 +9,6 @@ CVPR 2021 **[[Paper](https://arxiv.org/abs/2104.05833)]  [[Supp](https://nv-tlab
 
 <img src = "./figs/method.png" width="100%"/>
 
-In this paper, we utilize the GAN as the inference network via test-time optimization. datasetGAN is faster at test time and can handle less training data, while semGAN shows very strong performance on out-of-distribution data.
 
 ## Requirements
 - Python 3.6 or 3.7 are supported.
