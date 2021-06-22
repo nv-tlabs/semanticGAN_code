@@ -6,10 +6,10 @@ This is the official code for:
 [Daiqing Li](https://scholar.google.ca/citations?user=8q2ISMIAAAAJ&hl=en), [Junlin Yang](https://scholar.google.com/citations?user=QYkscc4AAAAJ&hl=en), [Karsten Kreis](https://scholar.google.de/citations?user=rFd-DiAAAAAJ&hl=de), [Antonio Torralba](https://groups.csail.mit.edu/vision/torralbalab/), [Sanja Fidler](http://www.cs.toronto.edu/~fidler/)
 
 CVPR 2021
+
 **[[Paper](https://arxiv.org/abs/2104.05833)]  [[Supp](https://nv-tlabs.github.io/semanticGAN/resources/SemanticGAN_supp.pdf)]**
 
 <img src = "./figs/method.png" width="100%"/>
-
 
 In this paper, we utilize the GAN as the inference network via test-time optimization. datasetGAN is faster at test time and can handle less training data, while semGAN shows very strong performance on out-of-distribution data.
 
@@ -98,7 +98,6 @@ Visualization of different optimization steps
 ![img](./figs/cxr-seg.png?lastModify=1616189357)
 
 
-
 ```
 python inference.py \
 --ckpt [path-to-ckpt] \
@@ -114,7 +113,7 @@ python inference.py \
 
 ## Citation 
 
-Please cite the follow paper is you used the code in this repository.
+Please cite the following paper if you used the code in this repository.
 
 ```
 @inproceedings{semanticGAN, 
