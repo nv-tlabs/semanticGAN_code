@@ -302,11 +302,3 @@ class ResEncoder(nn.Module):
         out = out.view(batch, self.n_latent, -1)
 
         return out
-
-if __name__ == "__main__":
-    net = FPNEncoder(3)
-    x = torch.rand(1,3,256,256)
-    net(x)
-    # net = ToStyleHead()
-    # x = torch.rand(1,256,8,8)
-    import pdb; pdb.set_trace()

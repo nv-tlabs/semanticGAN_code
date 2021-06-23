@@ -337,22 +337,3 @@ def sample_gema(g_ema, device, truncation, mean_latent, batch_size):
         sample = samples[0]
         
     return sample
-
-if __name__ == "__main__":
-    ckpt_path = '/media/sdc/stylegansegn/exps/face/ckpt/celeba-mask-full-label-large-unlabel-1024155548-070000.pt'
-    get_inception_metrics = prepare_inception_metrics('./inception_celeba_mask.pkl', False)
-    import functools
-    from model import GeneratorSeg
-
-    checkpoint = torch.load(ckpt_path)
-    g_ema = GeneratorSeg(256, 512, 8, seg_dim=8, image_mode='RGB', channel_multiplier=2).to('cuda')
-    g_ema.load_state_dict(checkpoint['g_ema'], strict=False)
-    g_ema.eval()
-
-    g_ema = nn.DataParallel(g_ema)
-
-    sample = functools.partial(sample_gema, g_ema=g_ema, device='cuda', 
-                                truncation=1.0, mean_latent=None, batch_size=32)
-    
-    IS_mean, IS_std, FID = get_inception_metrics(sample, num_inception_images=10000, use_torch=False)
-    print(IS_mean, IS_std, FID)
