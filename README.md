@@ -29,7 +29,17 @@ To reproduce paper **Semantic Segmentation with Generative Models: Semi-Supervis
 
 
 ---
+#### 0. Prepare for FID calculation
+In order to calculate FID score, you need to prepare inception features for your dataset,
 
+```
+python prepare_inception.py \
+--size [resolution of the image] \
+--batch [batch size] \
+--output [path to save the inception file, in .pkl] \
+--dataset_name celeba-mask \
+[positional argument 1, path to the image folder]] \
+```
 #### 1. GAN Training
 
 For training GAN with both image and its label,
