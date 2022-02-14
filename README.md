@@ -18,7 +18,8 @@ CVPR 2021 **[[Paper](https://arxiv.org/abs/2104.05833)]  [[Supp](https://nv-tlab
 ```
 pip install -r requirements.txt
 ```
-
+## Dataset
+We recently release MetFaces40 annotation we use as out-of-domain testing. Please notice this dataset is under the [Creative Commons BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) license by NVIDIA Corporation. To view a copy of this license, visit [LICENSE](https://github.com/nv-tlabs/semanticGAN_code/blob/main/LICENSE). Please see [GDrive](https://drive.google.com/drive/folders/1ibZzaWSUVoQ94OPoLNS0FrUufBeDvRP4?usp=sharing).
 ## Training 
 
 To reproduce paper **Semantic Segmentation with Generative Models: Semi-Supervised Learning and Strong Out-of-Domain Generalization**: 
